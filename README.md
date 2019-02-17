@@ -34,6 +34,8 @@ To disable DPST:
 To enable DPST:
 * `enable-dpst.bat`
 
+Typically DPST only needs to be disabled/enabled one time, however it may need to be re-run after major Windows updates or Intel&reg; graphics driver updates.
+
 
 ## Method of Operation
 

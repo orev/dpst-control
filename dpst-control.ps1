@@ -127,12 +127,6 @@ If( $Debug ) {
     $DebugPreference = "Continue"   # Enable debug output
 }
 
-# This script must run as admin
-If( !(RunningAsAdmin) ) {
-    Write-Error "Must run as Administrator!"
-    Exit 255
-}
-
 # Search registry for FTC entry
 $ftcPath = LocateFTC -regPath ${regBase}
 If( $ftcPath -eq $false ) {
@@ -184,9 +178,15 @@ Else {
         Exit 1
     }
     Else {
-        Write-Output "DPST is disabled"   
+        Write-Output "DPST is disabled"
         Exit 0
     }
+}
+
+# This script must run as admin if the value is going to be overwritten
+If( !(RunningAsAdmin) ) {
+    Write-Error "Must run as Administrator!"
+    Exit 255
 }
 
 

@@ -23,10 +23,10 @@ Each command does only one thing, and there is no GUI interface. To use:
 3. Enter administrator password if prompted
 4. Reboot
 
-:warning: **MUST RUN AS ADMINISTRATOR** :warning:
-
 To check the status of DPST:
 * `get-status.bat`
+
+:warning: **MUST RUN AS ADMINISTRATOR** :warning:
 
 To disable DPST:
 * `disable-dpst.bat`

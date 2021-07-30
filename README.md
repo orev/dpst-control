@@ -19,9 +19,10 @@ It is notably used on the Microsoft Surface line of products, as well as many ot
 Each command does only one thing, and there is no GUI interface. To use:
 1. Download and unzip. Does not have an installer
 2. Select file
-2. Right-click, Select: "Run as Administrator"
-3. Enter administrator password if prompted
-4. Reboot
+3. If you're running `get-status.bat` you don't have to run as admin, otherwise:
+4. Right-click, Select: "Run as Administrator"
+5. Enter administrator password if prompted
+6. Reboot
 
 To check the status of DPST:
 * `get-status.bat`
